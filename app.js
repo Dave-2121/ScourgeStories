@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const compression = require('compression');
 const cors = require('cors');
 
 const AppError = require('./utils/appError');
@@ -52,6 +53,9 @@ const limiter = rateLimit({
 });
 
 app.use('/api', limiter);
+
+//COMPRESSION
+app.use(compression());
 
 //DEVELOPMENT LOGGING
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
