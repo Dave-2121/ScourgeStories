@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Debug files
+*.pid
+*.seed
+
+# Build files
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+
+# MongoDB data (if storing local data files)
+data/
+dump/
+*.lock
+
+# Optional: Docker-related files
+docker-compose.override.yml
+.env.docker
+
+# Optional: Ignore uploads folder if used
+uploads/
+
+# Miscellaneous
+*.log
+*.bak
+*.old
